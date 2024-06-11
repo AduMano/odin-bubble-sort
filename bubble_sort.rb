@@ -1,15 +1,15 @@
-def bubble_sort(number_list)
-  (number_list.length - 1).times do |i|
+def bubble_sort(list_of_numbers)
+  (list_of_numbers.length - 1).times do |i|
     swapped = false # For checking if theres iteration (for j)
 
     # Used for loop to get the j value and make the looping a bit easier by specifying
     # a range from 0 to only the length minus the amount of i (how many times did i iterated)
     # minus 1 because array index starts at 0.
-    for j in 0...(number_list.length - i - 1)
-      if number_list[j] > number_list[j + 1]
-        temp = number_list[j] # Holds the temporary value 
-        number_list[j] = number_list[j + 1]
-        number_list[j + 1] = temp
+    for j in 0...(list_of_numbers.length - i - 1)
+      if list_of_numbers[j] > list_of_numbers[j + 1]
+        temp = list_of_numbers[j] # Holds the temporary value 
+        list_of_numbers[j] = list_of_numbers[j + 1]
+        list_of_numbers[j + 1] = temp
 
         swapped = true
       end
@@ -20,7 +20,7 @@ def bubble_sort(number_list)
     break unless swapped
   end
 
-  number_list
+  list_of_numbers
 end
 
 # Test Case
