@@ -1,0 +1,11 @@
+[4,3,78,2,0,2]
+ ^ ^
+ 4 > 3 ? Yes then => [3, 4]
+
+The way how bubble sort works is there will be 2 pointers.
+Im going to iterate the amount of elements inside the array
+and the 2 pointers will point out the pair values in array.
+those 2 pointers will be used to get the element number to compare
+who is greater, the greater value will be shifted on the right, or
+if its already on the right side, it will just stay what it was.
+this iterations continues up to the last.
