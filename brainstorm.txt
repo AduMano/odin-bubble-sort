@@ -4,6 +4,7 @@
 
 The way how bubble sort works is there will be 2 pointers.
 Im going to iterate the amount of elements inside the array
+then iterate again using the index of the first loop as reference
 and the 2 pointers will point out the pair values in array.
 those 2 pointers will be used to get the element number to compare
 who is greater, the greater value will be shifted on the right, or
